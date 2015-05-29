@@ -1,0 +1,28 @@
+{
+  "name": "fis3-deploy-tar",
+  "version": "1.0.0",
+  "description": "fis3 deplay tar archive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fex-team/fis3-deploy-tar.git"
+  },
+  "keywords": [
+    "fis3",
+    "deploy",
+    "tar"
+  ],
+  "author": "fis",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/fex-team/fis3-deploy-tar/issues"
+  },
+  "homepage": "https://github.com/fex-team/fis3-deploy-tar",
+  "dependencies": {
+    "archiver": "0.14.4",
+    "concat-stream": "1.4.8"
+  }
+}
