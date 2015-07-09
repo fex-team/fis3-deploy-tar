@@ -16,12 +16,14 @@ module.exports = function(options, modified, total, callback) {
   });
 
   list.forEach(function(file) {
-    var filepath = file.getHashRelease().substring(1);
+    if (file.release) {
+      var filepath = file.getHashRelease().substring(1);
 
-    tarfile.append(file.getContent(), {
-      name: filepath,
-      mode: null
-    });
+      tarfile.append(file.getContent(), {
+        name: filepath,
+        mode: null
+      });
+    }
   });
 
   tarfile.finalize();
