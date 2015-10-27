@@ -16,7 +16,7 @@ module.exports = function(options, modified, total, callback) {
   });
 
   list.forEach(function(file) {
-    if (file.release) {
+    if (file.release !== false) {
       var filepath = file.getHashRelease().substring(1);
 
       tarfile.append(file.getContent(), {

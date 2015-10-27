@@ -1,6 +1,6 @@
 {
   "name": "fis3-deploy-tar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fis3 deplay tar archive",
   "main": "index.js",
   "scripts": {
